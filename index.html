@@ -6,13 +6,37 @@
   <title>AdsurKasur | Portfolio</title>
   <meta name="description" content="AdsurKasur - Hobbyist Web Developer, Creative Student, Problem Solver, Tech Enthusiast. Portfolio preview.">
   <link rel="canonical" href="https://adsurkasur-aura.vercel.app/">
-  <meta http-equiv="refresh" content="0; url=https://adsurkasur-aura.vercel.app/">
+  <!-- Removed meta refresh to allow overlay to show -->
+  <script>
+    // Show overlay for 1 second before redirect
+    document.addEventListener('DOMContentLoaded', function() {
+      var overlay = document.createElement('div');
+      overlay.id = 'redirect-overlay';
+      overlay.style.position = 'fixed';
+      overlay.style.top = '0';
+      overlay.style.left = '0';
+      overlay.style.width = '100vw';
+      overlay.style.height = '100vh';
+      overlay.style.background = 'linear-gradient(135deg,#18181b 0%,#23272f 100%)';
+      overlay.style.color = '#e5e7eb';
+      overlay.style.display = 'flex';
+      overlay.style.flexDirection = 'column';
+      overlay.style.justifyContent = 'center';
+      overlay.style.alignItems = 'center';
+      overlay.style.zIndex = '9999';
+      overlay.innerHTML = '<h1 style="font-size:2.5rem;margin-bottom:1rem;">Redirecting...</h1><p style="font-size:1.25rem;">You are being redirected to <br><span style="color:#06b6d4;">https://adsurkasur-aura.vercel.app/</span></p>';
+      document.body.appendChild(overlay);
+      setTimeout(function() {
+        window.location.href = 'https://adsurkasur-aura.vercel.app/';
+      }, 1000);
+    });
+  </script>
   <style>
     body { font-family: 'Segoe UI', Arial, sans-serif; background: linear-gradient(135deg,#18181b 0%,#23272f 100%); color: #e5e7eb; margin: 0; }
     .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
     .hero { display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 3rem; }
     .avatar { width: 180px; height: 180px; border-radius: 50%; border: 4px solid #6366f1; box-shadow: 0 0 24px #6366f1; object-fit: cover; }
-    .gradient-text { background: linear-gradient(90deg,#6366f1,#06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold; }
+    .gradient-text { background: linear-gradient(90deg,#6366f1,#06b6d4); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; font-weight: bold; }
     h1 { font-size: 2.5rem; margin: 0 0 1rem 0; }
     h2 { font-size: 1.5rem; margin: 0 0 1rem 0; color: #a5b4fc; }
     .section { margin-bottom: 2.5rem; }
