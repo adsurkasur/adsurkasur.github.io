@@ -1,11 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; url=https://adsurkasur-aura.vercel.app/">
-    <link rel="canonical" href="https://adsurkasur-aura.vercel.app/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdsurKasur | Portfolio Preview</title>
+  <meta name="description" content="AdsurKasur - Hobbyist Web Developer, Creative Student, Problem Solver, Tech Enthusiast. Portfolio preview.">
+  <link rel="canonical" href="https://adsurkasur-aura.vercel.app/">
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: linear-gradient(135deg,#18181b 0%,#23272f 100%); color: #e5e7eb; margin: 0; }
+    .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+    .hero { display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; margin-bottom: 3rem; }
+    .avatar { width: 180px; height: 180px; border-radius: 50%; border: 4px solid #6366f1; box-shadow: 0 0 24px #6366f1; object-fit: cover; }
+    .gradient-text { background: linear-gradient(90deg,#6366f1,#06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold; }
+    h1 { font-size: 2.5rem; margin: 0 0 1rem 0; }
+    h2 { font-size: 1.5rem; margin: 0 0 1rem 0; color: #a5b4fc; }
+    .section { margin-bottom: 2.5rem; }
+    .card { background: #23272f; border-radius: 1rem; box-shadow: 0 2px 16px #0002; padding: 1.5rem; margin-bottom: 1.5rem; }
+    .projects img { width: 100%; max-width: 320px; border-radius: 0.75rem; margin-bottom: 0.5rem; }
+    .skills-list, .contact-list, .support-list { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .skills-list span { background: #6366f1; color: #fff; border-radius: 0.5rem; padding: 0.5rem 1rem; font-size: 1rem; }
+    .contact-list a, .support-list a { color: #06b6d4; text-decoration: none; font-weight: 500; }
+    .contact-list a:hover, .support-list a:hover { text-decoration: underline; }
+    .footer { text-align: center; color: #a1a1aa; margin-top: 2rem; font-size: 1rem; }
+    @media (max-width:600px) { .hero { flex-direction: column; align-items: flex-start; } .avatar { width: 120px; height: 120px; } }
+  </style>
 </head>
 <body>
-    <p>If you are not redirected automatically, follow this <a href="https://adsurkasur-aura.vercel.app/">link to my portfolio</a>.</p>
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero section">
+      <img src="https://raw.githubusercontent.com/adsurkasur/adsurkasur.github.io/main/references/developer-avatar.jpg" alt="AdsurKasur Avatar" class="avatar" loading="lazy">
+      <div>
+        <h1>Hi, I'm <span class="gradient-text">AdsurKasur</span></h1>
+        <h2>Hobbyist Web Developer · Creative Student · Problem Solver · Tech Enthusiast</h2>
+        <p>Welcome! I thrive on turning challenges into opportunities through a blend of scientific inquiry, strategic thinking, and a love for technology. I'm always looking for the next exciting project. Let's build the future together!</p>
+        <p style="margin-top:1rem;">
+          <a href="https://github.com/adsurkasur" target="_blank" rel="noopener" style="color:#6366f1;font-weight:600;">View GitHub Profile</a>
+          &nbsp;|&nbsp;
+          <a href="#projects" style="color:#06b6d4;font-weight:600;">Explore Projects</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Project Showcase -->
+    <section id="projects" class="section">
+      <h2>Featured Projects</h2>
+      <div class="card projects">
+        <img src="https://raw.githubusercontent.com/adsurkasur/adsurkasur.github.io/main/references/arina-project.png" alt="Arina Project Screenshot" loading="lazy">
+        <h3>Arina</h3>
+        <p>A next-generation web application for advanced agribusiness analysis, forecasting, and personalized recommendations, built with React (Vite), TypeScript, Tailwind CSS, and a Node.js/Express backend.</p>
+        <p>
+          <a href="https://app.arinaai.site" target="_blank">Live Site</a> ·
+          <a href="https://github.com/adsurkasur/Arina" target="_blank">GitHub</a>
+        </p>
+        <small>Tech: React, TypeScript, Node.js, Express, Tailwind CSS</small>
+      </div>
+      <div class="card projects">
+        <img src="https://raw.githubusercontent.com/adsurkasur/adsurkasur.github.io/main/references/batik-project.png" alt="Batik Beji Elegance Screenshot" loading="lazy">
+        <h3>Batik Beji Elegance Web</h3>
+        <p>Official website for BATEJI batik business in Kota Batu, accessible at bateji.my.id, showcasing their products and brand.</p>
+        <p>
+          <a href="https://bateji.my.id" target="_blank">Live Site</a> ·
+          <a href="https://github.com/adsurkasur/batik-beji-elegance-web" target="_blank">GitHub</a>
+        </p>
+        <small>Tech: Web Design, E-commerce, Branding</small>
+      </div>
+      <div class="card projects">
+        <img src="https://raw.githubusercontent.com/adsurkasur/adsurkasur.github.io/main/references/clicker-project.png" alt="Sata Andagi Clicker Screenshot" loading="lazy">
+        <h3>Sata Andagi Clicker</h3>
+        <p>A fun tokenized clicker game inspired by Azumanga Daioh's Osaka, allowing users to earn $SANDAGI tokens on the Monad testnet.</p>
+        <p>
+          <a href="https://sandagi.my.id" target="_blank">Live Site</a> ·
+          <a href="https://github.com/adsurkasur/sata-andagi-clicker" target="_blank">GitHub</a>
+        </p>
+        <small>Tech: Game Development, Blockchain, Tokens</small>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section">
+      <h2>Skills</h2>
+      <div class="card skills-list">
+        <span>JavaScript</span><span>TypeScript</span><span>Python</span><span>React</span><span>Node.js</span><span>MongoDB</span><span>Docker</span><span>Git</span><span>Problem Solving</span><span>Critical Thinking</span><span>Communication</span><span>Public Speaking</span><span>Teamwork</span><span>Leadership</span>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section">
+      <h2>Education</h2>
+      <div class="card">
+        <strong>Brawijaya University</strong> — Bachelor of Agricultural Technology (S.TP), Industrial Agricultural Technology<br>
+        <small>2023 - Present (Estimated Graduation 2027)</small>
+        <ul>
+          <li>Recipient of Program Kreativitas Mahasiswa Riset Eksakta (PKM-RE) Funding 2024</li>
+          <li>Teaching Assistant for Basic Chemistry Laboratory</li>
+          <li>First Runner-up, BIOPLASMA 2024 Business Plan Competition</li>
+          <li>Staff of HRD Bureau, Agritech Research and Study Club (ARSC)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section">
+      <h2>Experience & Certificates</h2>
+      <div class="card">
+        <ul>
+          <li>Program Kreativitas Mahasiswa Riset Eksakta (PKM-RE) Funding 2024</li>
+          <li>Teaching Assistant for Basic Chemistry Laboratory</li>
+          <li>BIOPLASMA 2024 Business Plan Competition - 1st Runner-up</li>
+          <li>Staff of HRD Bureau, Agritech Research and Study Club (ARSC)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+      <h2>Contact</h2>
+      <div class="card contact-list">
+        <a href="mailto:adesur2706@gmail.com">adesur2706@gmail.com</a>
+        <a href="https://www.linkedin.com/in/adsur/" target="_blank">LinkedIn</a>
+        <a href="https://x.com/adsurkasur" target="_blank">X (Twitter)</a>
+        <a href="https://instagram.com/adsurkasur" target="_blank">Instagram</a>
+        <a href="https://github.com/adsurkasur" target="_blank">GitHub</a>
+      </div>
+    </section>
+
+    <!-- Support Me Section -->
+    <section class="section">
+      <h2>Support Me</h2>
+      <div class="card support-list">
+        <a href="https://trakteer.id/adsurkasur" target="_blank">Trakteer</a>
+        <a href="https://ko-fi.com/adsurkasur" target="_blank">Ko-fi</a>
+      </div>
+    </section>
+
+    <!-- Contact Call To Action -->
+    <section class="section">
+      <div class="card" style="text-align:center;">
+        <h3>Ready to Start Something Amazing?</h3>
+        <p>Whether it's a collaborative project, a job opportunity, or just a friendly chat about technology, I'd love to hear from you. Let's create something extraordinary together!</p>
+        <p>
+          <a href="mailto:adesur2706@gmail.com" style="color:#6366f1;font-weight:600;">Send Message</a>
+          &nbsp;|&nbsp;
+          <a href="https://github.com/adsurkasur" target="_blank" style="color:#06b6d4;font-weight:600;">Follow on GitHub</a>
+        </p>
+      </div>
+    </section>
+
+    <div class="footer">
+      &copy; 2025 AdsurKasur. Crafted with <span style="color:#ef4444;">♥</span> and lots of tea.
+    </div>
+  </div>
 </body>
 </html>
